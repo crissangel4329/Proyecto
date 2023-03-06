@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ 
+}
+
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+
+
+/*MENU*/
+.bgmenu{
+    background-color: #232931;
+
+}
+
+/*Fin MEnu*/
+
+/*Inicio - Diseño para tablas-carrito*/
+
+.table-container {
+    float: left;
+    width: 800px;
+    max-height: 430px;
+    overflow-y: scroll;
+   
+
+}
+
+
+.footer-container button{
+    border: none;
+    width: 80px;
+    background-color: transparent;
+    
+}
+
+
+.table-container button{
+    border: none;
+    background-color: transparent;
+    color: #e12121;
+   
+}
+
+
+thead th {
+    font-size: 0.9em;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    }
+
+.table-cebra {
+    border-spacing: 0;
+    
+}
+
+.table-cebra thead th {
+    background-color: #282D4F;
+    color: #ccc;
+    text-align: center;
+    
+}
+
+.table-cebra th,
+.table-cebra td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.table-cebra th:last-child,
+.table-cebra td:last-child {
+    border-right: 0;
+}
+
+.table-cebra td {
+    border-bottom: 1px solid #ccc;
+}
+
+.table-cebra tbody tr {
+    background: white;
+}
+
+.table-cebra tbody tr:nth-child(2n) {
+    background-color: #282d4fd0;
+    color: #ccc;
+
+}
+
+
+
+.table-cebra tbody tr:nth-child(2n) .sticky {
+    background: rgb(43, 128, 226);
+}
+
+.table-cebra tr:hover td {
+    background-color: #282d4f74;
+    color: rgb(160, 95, 138);
+    cursor: pointer;
+    transition: 0s;
+}
+
+
+
+
+
+/*Fin - Diseño para tablas-carrito*/
+
+@media(min-width:800px){
+    .card{
+        background-color: rgb(201, 246, 252);
+        height: 600px !important;
+    }
+}
+.card{
+    background-color: rgb(201, 246, 252);
+}
+.container img{
+    height: 200px;
+    width: 180px;
+    margin-left: 120px;
+    margin-top: 40px;
+    text-align: center;
+    border: 3px solid; 
+    color: darkcyan;
+   
+}
+
+.btnadd { 
+    border: none;
+    border-radius: 4%;
+    height: 40px;
+    width:45%;
+    background-color:DarkTurquoise;
+    color:white
+} 

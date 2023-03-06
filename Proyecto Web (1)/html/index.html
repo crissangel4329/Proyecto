@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/index.js"></script>
+
+    <title>MarketPlace</title>
+
+    <style>
+        .men {
+            margin-top: -25px;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body onload="CargarProductos ()">
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light text-white bgmenu ">
+            <div class="container-fluid">
+
+                <a class="navbar-brand text-white " href="#"><img style="width: 2rem; width: 6rem;" src="" alt=""> <span
+                        style="text-align: center;"><b>Ventas</b></span></a>
+
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <li class="nav-item" style="list-style-type: none;">
+                        <a class="nav-link active text-white" href="carrito.html" aria-current="page"><b><span class="material-icons">
+                            shopping_cart
+                        </span></b></a>
+                    </li>
+
+                    <li class="derechafull" style="list-style-type: none;">
+                        <a class="active text-white" style="list-style-type:none;" href="../index.html">
+                            <span class="material-icons">
+                                logout
+                            </span>
+                        </a>
+                    </li>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <img class="" src="../resource/images/Principal.jpg" class="card-img-top" width="100%" height="300px">
+
+        <div style="background-color: rgb(3, 201, 184);">
+            <h3 class="text-center">
+                <strong> CATÁLOGO DE PRODUCTOS </strong>
+            </h3>
+        </div>
+
+
+
+    </div>
+    <div class="container">
+
+        <div id="cardProductos" class="row mt-4">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Menu de Inventario</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link href="../css/styles.css" rel="stylesheet">
+
+    <!-- estilo de la tabla de inventario-->
+    <style type="text/css">
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+
+        th,
+        td {
+            padding: 8px;
+
+        }
+
+        th {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light text-white bgmenu ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-white " ><img style="width: 2rem; width: 6rem;" src="" alt="">
+                <span style="text-align: center;">Ventas</span></a>
+
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="agregar.html">Agregar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="busqueda.html">
+                            Buscar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="eliminar.html">
+                            Eliminar
+                        </a>
+                    </li>
+
+
+
+                </ul>
+
+                <li class="derechafull" style="list-style-type: none;">
+                    <a class="active text-white" style="list-style-type:none;" href="../index.html">
+                        <span class="material-icons">
+                            logout
+                        </span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+    <!-- <header>
+
+        <div class="icon__menu">
+            <span class="icon icon-menu" id="btn_open"></span>
+        </div>
+    </header>
+
+    <div class="menu_inventario" id="menu_inventario">
+
+        <div class="name__page">
+        <span class="icon icon-book"></span>
+            <h4>Inventario</h4>
+    </div>
+
+        <div class="options__menu">
+            <a href ="inventario.html" class="selected">
+                <div class="option">
+                    <span class="icon icon-home" title="Inicio" > </span>
+                    <h4>Inicio</h4>
+                </div>
+                
+            </a>
+            <a href ="agregar.html"class="selected">
+                <div class="option">
+                    <span class="icon icon-pencil" title="Agregar" > </span>
+                    <h4>Agregar</h4>
+                </div>
+            </a>
+            <a href ="eliminar.html"class="selected">
+                <div class="option">
+                    <span class="icon icon-bin" title="Eliminar" > </span>
+                    <h4>Eliminar</h4>
+                </div>
+            </a>
+            <a href ="busqueda.html"class="selected">
+                <div class="option">
+                    <span class="icon icon-search" title="Consultar" > </span>
+                    <h4>Consultar</h4>
+                </div>
+            </a>
+        </div>
+    </div> -->
+    <main>
+        <div class="container mt-5">
+            <div class="row justify-content-center ">
+
+
+                <div style="text-align: center;">
+                    <h1>Inventario </h1>
+                </div>
+                <div class="col-12 table-container">
+
+
+
+                    <table class="table-cebra ">
+                        <thead>
+                            <th colspan="8">
+
+                                Inventario Actual
+                            </th>
+
+                            <tr>
+                                <th style="width: 200px; text-align: center;">
+                                    Cod Lote
+                                </th>
+
+                                <th style="width: 200px; text-align: center;">
+                                    Producto
+                                </th>
+
+                                <th style="width: 400px; text-align: center;">
+                                    Cod Producto
+                                </th>
+
+                                <th style="width: 200px; text-align: center;">
+                                    Precio
+                                </th>
+                                <th style="width: 200px; text-align: center;">
+                                    Existencias
+                                </th>
+                                <th style="width: 200px; text-align: center;">
+                                    Entradas
+                                </th style="width: 200px; text-align: center;">
+                                <th>
+                                    Salidas
+                                </th>
+                                <th style="width: 200px; text-align: center;">
+                                    Observacion
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>123456</td>
+                                <td>Alcohol</td>
+                                <td>789</td>
+                                <td>10</td>
+                                <td>200 unidades</td>
+                                <td>150</td>
+                                <td>150</td>
+                                <td>Altamente inflamable</td>
+                            </tr>
+                            <tr>
+                                <td>258746</td>
+                                <td>detergente grande</td>
+                                <td>698</td>
+                                <td>5</td>
+                                <td>75 unidades</td>
+                                <td>45</td>
+                                <td>30</td>
+                                <td>Venta rapida</td>
+                            </tr>
+                            <tr>
+                                <td>963258</td>
+                                <td>Cloro</td>
+                                <td>493</td>
+                                <td>3</td>
+                                <td>30 unidades</td>
+                                <td>10</td>
+                                <td>20</td>
+                                <td>Bajo supervision</td>
+                            </tr>
+                            <tr>
+                                <td>147852</td>
+                                <td>Desengrasante</td>
+                                <td>372</td>
+                                <td>7</td>
+                                <td>100 unidades</td>
+                                <td>30</td>
+                                <td>70</td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../js/scripsInventario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

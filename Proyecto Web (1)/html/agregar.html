@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar productos</title>
+  
+    <style>
+        h1{
+            text-align: center;
+        }
+        tr, td{
+            padding: 6px;
+        }
+        p{
+            padding: 8px;
+        }
+    
+    </style>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+<link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>  
+    <nav class="navbar navbar-expand-lg navbar-light text-white bgmenu " >
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-white "><img style="width: 2rem; width: 6rem;" src="" alt=""> <span
+                    style="text-align: center;">Ventas</span></a>
+           
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="inventario.html">
+                           Inventario
+                        </a>                   
+                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="busqueda.html">
+                           Consultar
+                        </a>                   
+                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="eliminar.html">
+                          Eliminar
+                        </a>                  
+                     </li>
+                 
+                  
+
+                </ul>
+                <li class="derechafull" style="list-style-type: none;">
+                    <a class="active text-white" style="list-style-type:none;" href="../index.html">
+                        <span class="material-icons">
+                            logout
+                        </span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+    </nav>  
+    <h1>Registro en el inventario</h1>
+    <p>Registra la informacion de los productos al inventario</p>
+
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>Codigo del lote: </td>
+            <td><input type="text"name="Codigo del Producto"></td>
+            </tr>
+            
+            <tr>
+                <td>Producto: </td>
+                <td><input type="text" name="Producto"></td>
+            </tr>
+
+            <tr>
+                <td>Codigo del Producto: </td>
+                <td><input type="text" name="Codigo del Producto"></td>
+            </tr>
+
+            <tr>
+                <td>Precio: </td>
+                <td><input type="text" name="Precio"></td>
+            </tr>
+
+            <tr>
+                <td>Existencias: </td>
+                <td><input type="text" name="Existencias"></td>
+            </tr>
+
+            <tr>
+                <td>Entradas </td>
+                <td><input type="text" name="Entradas"></td>
+            </tr>
+
+            <tr>
+                <td>Salidas </td>
+                <td><input type="text" name="Salidas"></td>
+            </tr>
+
+            <tr>
+                <td>Observacion </td>
+                <td><input type="text" name="Observacion"></td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="button" value="Registrar" onclick="alert('Registrado');">
+                </td>
+            </tr>
+        </table>
+    </form>
+        
+    <script src="scripsInventario.js"></script>
+           
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    
+</body>
+</html>
